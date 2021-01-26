@@ -1,11 +1,13 @@
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import NavBar from "./NavBar";
+import DogList from "./DogList";
+import DogDetails from "./DogDetails";
+
 import whiskey from "./images/whiskey.jpg";
 import duke from "./images/duke.jpg";
 import perry from "./images/perry.jpg";
 import tubby from "./images/tubby.jpg";
-import NavBar from "./NavBar";
-import DogList from "./DogList";
-import DogDetails from "./DogDetails";
+
 import './App.css';
 
 function App({ dogs=defaultDogs }) {
@@ -69,6 +71,5 @@ const defaultDogs = [
     ]
   }
 ];
-
 
 export default App;
